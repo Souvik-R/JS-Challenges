@@ -8,6 +8,8 @@ const name = {
 let printFullName = function (homeTown){
     console.log(this.firstName +' '+ this.lastName + ' from '+ homeTown);
 }
+
+// Function Borrowing
 printFullName.call(name, "Panskura");
 
 const name2 = {
@@ -20,7 +22,6 @@ printFullName.call(name2, "Kolkata");
 
 
 // Apply Method
-
 printFullName.apply(name2, ["Japan"]);
 
 // Bind Method
