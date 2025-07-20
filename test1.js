@@ -57,4 +57,33 @@ const count = string.split("").reduce((acc, curr) => {
     if (vowels.includes(curr)) acc += 1
     return acc;
 }, 0);
-console.log(count);
+// console.log(count);
+
+
+Array.prototype.last = function() {
+    if(this.length === 0){
+        return -1
+    }
+    return this[this.length - 1]
+};
+
+
+
+const data = vowels.last();
+// console.log(data);
+
+
+var a = 5;
+var b = 7;
+var obj = {
+    a:3,
+    b:2,
+    childObj: {
+        c:1,
+        add: function(){
+            console.log(this.a + this.b + this.c)
+        }
+    }
+}
+
+obj.childObj.add();
