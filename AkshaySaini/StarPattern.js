@@ -56,3 +56,22 @@ for(let l = 0; l < w; l ++){
 
 
 console.log("================================");
+
+
+ /*   
+    1
+    2 2
+    3 3 3
+    4 4 4 4 
+    5 5 5 5 5
+                */
+
+let num = 5;
+
+for(let o = 1; o <= num; o ++){
+    let data = "";
+    for(let p = 1; p <= o; p ++){
+        data = data + (o) + " ";
+    }
+    console.log(data);
+}
