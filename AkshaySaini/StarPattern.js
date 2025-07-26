@@ -93,3 +93,28 @@ for (w = 0; w < m; w++) {
     }
     console.log(data);
 }
+
+
+console.log("================================");
+
+
+/*   
+      *
+    * *
+  * * *
+* * * *   
+        */
+
+
+let b = 5;
+
+for(let z = 0; z < b; z ++){
+    let row = "";
+    for(let x = 0; x < b - (z + 1); x ++){
+        row = row + "- ";
+    }
+    for(let y = 0; y < z + 1; y ++){
+        row = row + "* ";
+    }
+    console.log(row);
+}
