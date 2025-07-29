@@ -108,12 +108,14 @@ console.log("================================");
 
 let b = 5;
 
-for(let z = 0; z < b; z ++){
+for (let z = 0; z < b; z++) {
     let row = "";
-    for(let x = 0; x < b - (z + 1); x ++){
+    // adding spaces before stars
+    for (let x = 0; x < b - (z + 1); x++) {
         row = row + "- ";
     }
-    for(let y = 0; y < z + 1; y ++){
+    // adding stars
+    for (let y = 0; y < z + 1; y++) {
         row = row + "* ";
     }
     console.log(row);
