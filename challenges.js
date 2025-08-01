@@ -8,6 +8,7 @@ for (let i = 0; i < data.length; i++) {
         capitalIndexes.push(i);
     }
 }
+// changes in capital Indexes array
 
 console.log("Indexes of capital letters:", capitalIndexes);
 // ****************** Same using MAP function
