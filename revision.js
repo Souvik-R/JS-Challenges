@@ -3,7 +3,7 @@ function findNegativeCount(array){
     let count = 0;
     for(i = 0; i < array.length; i ++){
         if(array[i] < 0){
-            count ++
+            count = count + 1;
         }
     }
     return count;
