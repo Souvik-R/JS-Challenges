@@ -22,6 +22,7 @@ const obj = {
         return this.a + this.b
     }
 };
-console.log(obj.sum());
+const result = obj.sum.bind(obj);
+console.log(result());
 
 
