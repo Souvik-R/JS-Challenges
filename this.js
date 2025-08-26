@@ -78,15 +78,15 @@ arrowObj.printName();
 
 // console.log("start");
 
-function x() {
-    for (var i = 0; i <= 3; i++) {
+function r() {
+    for (let i = 0; i <= 3; i++) {
         setTimeout(function () {
             console.log(i);
         }, i * 1000);
     }
     console.log("Hello, JavaScript!");
 }
-x();
+r();
 
 // function y() {
 //     for (let i = 0; i <= 3; i++) {
