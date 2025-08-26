@@ -78,23 +78,23 @@ arrowObj.printName();
 
 // console.log("start");
 
-// function x() {
-//     for (var i = 0; i <= 3; i++) {
-//         setTimeout(function () {
-//             console.log(i);
-//         }, i * 1000);
-//     }
-//     console.log("Hello, JavaScript!");
-// }
-// x();
-
-function y() {
-    for (let i = 0; i <= 3; i++) {
+function x() {
+    for (var i = 0; i <= 3; i++) {
         setTimeout(function () {
             console.log(i);
         }, i * 1000);
     }
     console.log("Hello, JavaScript!");
 }
-y();
+x();
+
+// function y() {
+//     for (let i = 0; i <= 3; i++) {
+//         setTimeout(function () {
+//             console.log(i);
+//         }, i * 1000);
+//     }
+//     console.log("Hello, JavaScript!");
+// }
+// y();
 
