@@ -78,17 +78,7 @@ arrowObj.printName();
 
 // console.log("start");
 
-function r() {
-    for (let i = 0; i <= 3; i++) {
-        setTimeout(function () {
-            console.log(i);
-        }, i * 1000);
-    }
-    console.log("Hello, JavaScript!");
-}
-r();
-
-// function y() {
+// function r() {
 //     for (let i = 0; i <= 3; i++) {
 //         setTimeout(function () {
 //             console.log(i);
@@ -96,5 +86,15 @@ r();
 //     }
 //     console.log("Hello, JavaScript!");
 // }
-// y();
+// r();
+
+function y() {
+    for (let i = 0; i <= 3; i++) {
+        setTimeout(function () {
+            console.log(i);
+        }, i * 1000);
+    }
+    console.log("Hello, JavaScript!");
+}
+y();
 
