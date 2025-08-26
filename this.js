@@ -18,7 +18,7 @@ function x(){
 // this keyword value depends on how the function is called (window).
 
 x(); // undefined
-window.x(); // window
+// window.x(); // window
 
 // this inside an object's method.
 
@@ -88,13 +88,13 @@ arrowObj.printName();
 // }
 // x();
 
-// function y() {
-//     for (let i = 0; i <= 3; i++) {
-//         setTimeout(function () {
-//             console.log(i);
-//         }, i * 1000);
-//     }
-//     console.log("Hello, JavaScript!");
-// }
-// y();
+function y() {
+    for (let i = 0; i <= 3; i++) {
+        setTimeout(function () {
+            console.log(i);
+        }, i * 1000);
+    }
+    console.log("Hello, JavaScript!");
+}
+y();
 
