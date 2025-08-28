@@ -18,6 +18,6 @@ let number = 0;
 const result = countDigit(number);
 
 console.log(result);
-
+ 
 
 // corner cases - 1. negetive number 2. zero
