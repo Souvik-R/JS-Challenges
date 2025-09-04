@@ -1,6 +1,4 @@
 // palindrome
-
-
 const palindrome = function(num){
     let numCopy = num;
     let reverse = 0;
