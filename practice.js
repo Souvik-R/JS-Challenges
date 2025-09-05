@@ -11,5 +11,6 @@ const palindrome = function(num){
     return reverse == numCopy;
 }
 
+
 const results = palindrome(121);
 console.log(results);
