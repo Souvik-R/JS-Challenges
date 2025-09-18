@@ -1,15 +1,14 @@
-
 const p = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Promise resolve succesfully");
-    }, 10000);
+  setTimeout(() => {
+    resolve("Promise resolve succesfully");
+  }, 10000);
 });
 
-async function handlePromise(){
-    console.log("HEYYYYYYYYYYYYY")
-    const val = await p;
-    console.log(val);
-    console.log("Namaste Javascript");
+async function handlePromise() {
+  console.log("HEYYYYYYYYYYYYY");
+  const val = await p;
+  console.log(val);
+  console.log("Namaste Javascript");
 }
 
 handlePromise();
