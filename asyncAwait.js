@@ -2,7 +2,7 @@ const p = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Promise resolve succesfully");
   }, 10000);
-}); 
+});
 
 async function handlePromise() {
   console.log("HEYYYYYYYYYYYYY");
