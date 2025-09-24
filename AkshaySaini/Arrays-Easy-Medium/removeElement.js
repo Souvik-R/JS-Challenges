@@ -14,6 +14,7 @@ const removeElement = function (arr, val) {
     // arr.length = x;
     return x;
 }
+
 const array = [0, 2, 2, 4, 4, 5, 6, 6];
 
 const result = removeElement(array, 6);
