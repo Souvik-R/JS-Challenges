@@ -8,4 +8,5 @@ const output = input.slice(1).map((num, i) => {
   return diff * diff;
 });
 
+
 console.log(output); // [4, 9, 16]
