@@ -68,6 +68,7 @@
 // const test = () => {
 //     console.log("Hello");
 // }
+
 var a = [10, 11, 12, 13, 14];
 function print(b, ...a){
     console.log(b, a);
