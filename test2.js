@@ -74,3 +74,17 @@ function print(b, ...a){
     console.log(b, a);
 };
 print(8, 9, 10, 11, 12);
+
+
+
+// challange
+function show(){
+    {
+        // (function x(){
+            var x = 9;
+            var y = 10;
+        // })();
+    }
+    console.log(x, y);
+}
+show();
