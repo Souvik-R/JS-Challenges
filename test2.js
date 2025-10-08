@@ -95,7 +95,6 @@ const str = "hare krishna hare krishna krishna krishna hare hare";
 
 const obj = {};
 for (let data of str) {
-  // console.log(data);
   if (obj[data]) {
     obj[data] += 1;
   } else {
