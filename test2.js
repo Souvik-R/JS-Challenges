@@ -92,7 +92,6 @@ show();
 
 // character count from a string.
 const str = "hare krishna hare krishna krishna krishna hare hare";
-
 const obj = {};
 for (let data of str) {
   if (obj[data]) {
