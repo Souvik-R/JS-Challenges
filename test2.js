@@ -109,3 +109,13 @@ for (i = 0; i < 5; i++) {
         console.log("i=" + i + ", j=" + j);
     }
 }
+
+
+// Palindrome
+var isPlaindrome = function (x) {
+    if (x < 0) return false;
+    const str = x.toString();
+    return str === str.split('').reverse().join('');
+}
+const data = isPlaindrome(7227);
+console.log(data);
