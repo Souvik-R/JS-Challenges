@@ -110,7 +110,6 @@ for (i = 0; i < 5; i++) {
     }
 }
 
-
 // Palindrome
 var isPlaindrome = function (x) {
     if (x < 0) return false;
