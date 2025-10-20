@@ -118,3 +118,13 @@ var isPlaindrome = function (x) {
 }
 const data = isPlaindrome(7227);
 console.log(data);
+
+console.log("/////////////////////////////");
+const res = parseInt("123.45");
+console.log(res);
+
+let u = 0;
+while (u < 5) {
+    console.log("Hello World");
+    u++;
+}
