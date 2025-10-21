@@ -69,62 +69,79 @@
 //     console.log("Hello");
 // }
 
-var a = [10, 11, 12, 13, 14];
-function print(b, ...a){
-    console.log(b, a);
-};
-print(8, 9, 10, 11, 12);
+// var a = [10, 11, 12, 13, 14];
+// function print(b, ...a){
+//     console.log(b, a);
+// };
+// print(8, 9, 10, 11, 12);
 
 
 
 // challange
-function show(){
-    {
-        // (function x(){
-            var x = 9;
-            var y = 10;
-        // })();
-    }
-    console.log(x, y);
-}
-show();
+// function show(){
+//     {
+//         // (function x(){
+//             var x = 9;
+//             var y = 10;
+//         // })();
+//     }
+//     console.log(x, y);
+// }
+// show();
 
 
 // character count from a string.
-const str = "hare krishna hare krishna krishna krishna hare hare";
-const obj = {};
-for (let data of str) {
-  if (obj[data]) {
-    obj[data] += 1;
-  } else {
-    obj[data] = 1;
-  }
-}
-console.log(obj);
+// const str = "hare krishna hare krishna krishna krishna hare hare";
+// const obj = {};
+// for (let data of str) {
+//   if (obj[data]) {
+//     obj[data] += 1;
+//   } else {
+//     obj[data] = 1;
+//   }
+// }
+// console.log(obj);
 
 
 // Loop inside loop
-for (i = 0; i < 5; i++) {
-    for (j = 0; j <= i; j++) {
-        console.log("i=" + i + ", j=" + j);
-    }
-}
+// for (i = 0; i < 5; i++) {
+//     for (j = 0; j <= i; j++) {
+//         console.log("i=" + i + ", j=" + j);
+//     }
+// }
 
 // Palindrome
-var isPlaindrome = function (x) {
-    if (x < 0) return false;
-    const str = x.toString();
-    return str === str.split('').reverse().join('');
+// var isPlaindrome = function (x) {
+//     if (x < 0) return false;
+//     const str = x.toString();
+//     return str === str.split('').reverse().join('');
+// }
+// const data = isPlaindrome(7227);
+// console.log(data);
+
+// console.log("/////////////////////////////");
+// const res = parseInt("123.45");
+// console.log(res);
+
+// let u = 0;
+// while (u < 5) {
+//     console.log("Hello World");
+//     u++;
+// }
+
+
+// count digit 
+
+function counter(n) {
+    let count = 0;
+    while (n > 0) {
+        n = Math.floor(n / 10);
+        count++;
+    }
+    return count;
 }
-const data = isPlaindrome(7227);
+
+let num = 178229;
+
+const data = counter(num);
 console.log(data);
-
-console.log("/////////////////////////////");
-const res = parseInt("123.45");
-console.log(res);
-
-let u = 0;
-while (u < 5) {
-    console.log("Hello World");
-    u++;
-}
