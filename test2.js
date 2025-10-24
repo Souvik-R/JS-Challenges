@@ -142,6 +142,5 @@ function counter(n) {
 }
 
 let num = 178229;
-
 const data = counter(num);
 console.log(data);
