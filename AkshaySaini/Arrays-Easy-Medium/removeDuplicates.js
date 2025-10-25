@@ -6,10 +6,10 @@
 // The relative order of the elements should be kept the same. 
 // Then return the number of unique elements in nums.
 
-let removeDuplicates = function(nums){
+let removeDuplicates = function (nums) {
     let x = 0;
-    for(let i = 0; i < nums.length; i++){
-        if(nums[i] > nums[x]){
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > nums[x]) {
             x++;
             nums[x] = nums[i];
         }
