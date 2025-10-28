@@ -129,6 +129,7 @@
 //     u++;
 // }
 
+
 // count digit
 
 function counter(n) {
