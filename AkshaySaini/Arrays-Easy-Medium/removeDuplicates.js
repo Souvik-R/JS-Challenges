@@ -17,6 +17,5 @@ let removeDuplicates = function (nums) {
     return x + 1;
 }
 const sortedArr = [0, 0, 1, 1, 2, 2, 2, 4, 5, 5];
-
 const result = removeDuplicates(sortedArr);
 console.log(result);
