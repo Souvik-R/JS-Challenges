@@ -14,6 +14,7 @@ let removeDuplicates = function (nums) {
             nums[x] = nums[i];
         }
     }
+    
     return x + 1;
 }
 const sortedArr = [0, 0, 1, 1, 2, 2, 2, 4, 5, 5];
