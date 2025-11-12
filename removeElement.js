@@ -11,7 +11,5 @@ function elementRemove(num, value){
     }
     return x;
 }
-
 const data = elementRemove(arr, 3);
-
 console.log(data);
