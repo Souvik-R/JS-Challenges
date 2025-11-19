@@ -9,7 +9,6 @@ function elementRemove(num, value){
             x ++;
         }
     }
-    
     return x;
 }
 
