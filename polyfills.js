@@ -2,9 +2,9 @@
 
 const arr = [2, 3, 5, 7, 9];
 
-Array.prototype.myMap = function (callback){
+Array.prototype.myMap = function (callback) {
     let results = [];
-    this.forEach((item, index, array)=>{
+    this.forEach((item, index, array) => {
         results.push(callback(item, index, array));
     });
     return results;
