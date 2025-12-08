@@ -148,12 +148,23 @@
 // console.log(data);
 
 
-function sum(num){
-   return num * 2
+// function sum(num){
+//    return num * 2
+// }
+// const arr = [1, 3, 4, 7, 9];
+
+// const mapData = arr.map(sum);
+
+// const data = arr.filter((x) => x > 4);
+// console.log(mapData);
+
+
+function findSum(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i ++){
+        sum = sum + arr[i];
+    }
+    return sum;
 }
-const arr = [1, 3, 4, 7, 9];
-
-const mapData = arr.map(sum);
-
-const data = arr.filter((x) => x > 4);
-console.log(mapData);
+const array = [3, 4, 2, 7]
+console.log(findSum(array));
