@@ -132,17 +132,28 @@
 
 // count digit
 
-function counter(n) {
-    if(n == 0) return 1;
-    n = Math.abs(n);
-    let count = 0;
-    while (n > 0) {
-        n = Math.floor(n / 10);
-        count++;
-    }
-    return count;
-}
+// function counter(n) {
+//     if(n == 0) return 1;
+//     n = Math.abs(n);
+//     let count = 0;
+//     while (n > 0) {
+//         n = Math.floor(n / 10);
+//         count++;
+//     }
+//     return count;
+// }
 
-let num = -3;
-const data = counter(num);
-console.log(data);
+// let num = -3;
+// const data = counter(num);
+// console.log(data);
+
+
+function sum(num){
+   return num * 2
+}
+const arr = [1, 3, 4, 7, 9];
+
+const mapData = arr.map(sum);
+
+const data = arr.filter((x) => x > 4);
+console.log(mapData);
