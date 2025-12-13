@@ -168,3 +168,4 @@ function findSum(arr){
 }
 const array = [3, 4, 2, 7]
 console.log(findSum(array));
+
