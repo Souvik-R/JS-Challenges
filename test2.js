@@ -159,13 +159,22 @@
 // console.log(mapData);
 
 
-function findSum(arr){
-    let sum = 0;
-    for(let i = 0; i < arr.length; i ++){
-        sum = sum + arr[i];
-    }
-    return sum;
-}
-const array = [3, 4, 2, 7]
-console.log(findSum(array));
+// function findSum(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i ++){
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
+// const array = [3, 4, 2, 7]
+// console.log(findSum(array));
+
+
+
+const obj = {};
+obj[1] = "one";
+obj[true] = "yes";
+
+console.log(obj); 
+// { '1': 'one', 'true': 'yes' }
 
