@@ -172,7 +172,7 @@
 
 
 const obj = {};
-obj[1] = "one";
+obj['1'] = "one";
 obj[true] = "yes";
 
 console.log(obj); 
