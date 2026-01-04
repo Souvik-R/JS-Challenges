@@ -169,8 +169,6 @@
 // const array = [3, 4, 2, 7]
 // console.log(findSum(array));
 
-
-
 const obj = {};
 obj[1] = "one";
 obj[true] = "yes";
