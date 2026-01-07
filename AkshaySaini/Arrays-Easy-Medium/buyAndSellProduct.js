@@ -8,6 +8,7 @@ let maxProfitCalculation = function (prices) {
         if (prices[i] - min > maxProfit) {
             maxProfit = prices[i] - min;
         }
+        
         if (prices[i] < min) {
             min = prices[i];
         }
