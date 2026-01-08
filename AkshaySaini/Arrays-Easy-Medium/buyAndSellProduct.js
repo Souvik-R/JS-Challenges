@@ -1,5 +1,4 @@
 // Best way to buy and sell a product.
-
 let maxProfitCalculation = function (prices) {
     let min = prices[0];
     let maxProfit = 0;
