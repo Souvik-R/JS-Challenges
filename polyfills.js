@@ -44,12 +44,12 @@ Promise.myPromiseAll = function (promises) {
 }
 
 // Polyfills of Momoize function
-function memoize(fn){
+function memoize(fn) {
     const cache = {};
 
-    return function(args){
+    return function (args) {
 
-        if(cache[args]){
+        if (cache[args]) {
             return cache[args];
         };
         const result = fn.apply(this, args);
