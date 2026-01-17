@@ -169,10 +169,27 @@
 // const array = [3, 4, 2, 7]
 // console.log(findSum(array));
 
-const obj = {};
-obj[1] = "one";
-obj[true] = "yes";
+// const obj = {};
+// obj[1] = "one";
+// obj[true] = "yes";
 
-console.log(obj); 
+// console.log(obj); 
 // { '1': 'one', 'true': 'yes' }
+
+
+
+
+const myMap = new Map();
+
+// set() মেথড ব্যবহার করে কী এবং মান যোগ করা
+myMap.set('name', 'Alice');
+myMap.set('age', 25);
+
+// get() মেথড ব্যবহার করে কোনো কীর মান পাওয়া
+console.log(myMap.get('name')); // আউটপুট: Alice
+console.log(myMap.get('age'));  // আউটপুট: 25
+
+// has() মেথড ব্যবহার করে চেক করা যে কোনো কী আছে কি না
+console.log(myMap.has('name')); // আউটপুট: true
+console.log(myMap.has('gender')); // আউটপুট: false
 
