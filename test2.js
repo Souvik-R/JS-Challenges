@@ -193,3 +193,4 @@ console.log(myMap.get('age'));  // আউটপুট: 25
 console.log(myMap.has('name')); // আউটপুট: true
 console.log(myMap.has('gender')); // আউটপুট: false
 
+
