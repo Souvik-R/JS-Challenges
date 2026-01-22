@@ -179,18 +179,37 @@
 
 
 
-const myMap = new Map();
+// const myMap = new Map();
 
-// set() মেথড ব্যবহার করে কী এবং মান যোগ করা
-myMap.set('name', 'Alice');
-myMap.set('age', 25);
+// // set() মেথড ব্যবহার করে কী এবং মান যোগ করা
+// myMap.set('name', 'Alice');
+// myMap.set('age', 25);
 
-// get() মেথড ব্যবহার করে কোনো কীর মান পাওয়া
-console.log(myMap.get('name')); // আউটপুট: Alice
-console.log(myMap.get('age'));  // আউটপুট: 25
+// // get() মেথড ব্যবহার করে কোনো কীর মান পাওয়া
+// console.log(myMap.get('name')); // আউটপুট: Alice
+// console.log(myMap.get('age'));  // আউটপুট: 25
 
-// has() মেথড ব্যবহার করে চেক করা যে কোনো কী আছে কি না
-console.log(myMap.has('name')); // আউটপুট: true
-console.log(myMap.has('gender')); // আউটপুট: false
+// // has() মেথড ব্যবহার করে চেক করা যে কোনো কী আছে কি না
+// console.log(myMap.has('name')); // আউটপুট: true
+// console.log(myMap.has('gender')); // আউটপুট: false
 
+
+
+
+
+
+
+// const arr = [1, 2, 5, 6, 8];
+// const arr2 = arr;
+// arr2.push(10);
+// console.log(arr);
+// console.log(arr2);
+
+
+// Shallow Copy
+const arr = [1, 2, 5, 6, 8];
+const arr2 = [...arr];
+arr2.push(10);
+console.log(arr);
+console.log(arr2);
 
