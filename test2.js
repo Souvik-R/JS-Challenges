@@ -205,7 +205,6 @@
 // console.log(arr);
 // console.log(arr2);
 
-
 // Shallow Copy
 const arr = [1, 2, 5, 6, 8];
 const arr2 = [...arr];
