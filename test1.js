@@ -91,8 +91,19 @@
 
 
 
-const arr = [1, 2, 3];
-arr[10] = 99;
-console.log(arr.length);
-console.log(arr);
-console.log(arr[6]);
+// const arr = [1, 2, 3];
+// arr[10] = 99;
+// console.log(arr.length);
+// console.log(arr);
+// console.log(arr[6]);
+
+
+let user = {
+  name: "Souvik",
+  age: 25,
+  city: "Kolkata"
+};
+
+Object.entries(user).forEach(([key, value]) => {
+  console.log(key, value);
+});
