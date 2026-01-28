@@ -13,6 +13,7 @@ app.get("/getData", (req, res) => {
     });
 });
 
+
 app.get("/updateData", (req, res) => {
     data = "Updated Data"
     res.send({
