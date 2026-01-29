@@ -98,12 +98,33 @@
 // console.log(arr[6]);
 
 
-let user = {
-  name: "Souvik",
-  age: 25,
-  city: "Kolkata"
-};
+// let user = {
+//   name: "Souvik",
+//   age: 25,
+//   city: "Kolkata"
+// };
 
-Object.entries(user).forEach(([key, value]) => {
-  console.log(key, value);
+// Object.entries(user).forEach(([key, value]) => {
+//   console.log(key, value);
+// });
+
+
+console.log('start');
+
+Promise.resolve().then(() => {
+  console.log('promise1')
 });
+
+(async () => {
+  console.log('call async');
+  await Promise.resolve().then(() => {
+    console.log('promise2')
+  });
+  console.log('stop async');
+})();
+
+Promise.resolve().then(() => {
+  console.log('promise3')
+})
+
+console.log('end')
