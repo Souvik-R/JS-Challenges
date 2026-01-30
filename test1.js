@@ -109,22 +109,38 @@
 // });
 
 
-console.log('start');
+// console.log('start');
 
-Promise.resolve().then(() => {
-  console.log('promise1')
-});
+// Promise.resolve().then(() => {
+//   console.log('promise1')
+// });
 
-(async () => {
-  console.log('call async');
-  await Promise.resolve().then(() => {
-    console.log('promise2')
-  });
-  console.log('stop async');
-})();
+// (async () => {
+//   console.log('call async');
+//   await Promise.resolve().then(() => {
+//     console.log('promise2')
+//   });
+//   console.log('stop async');
+// })();
 
-Promise.resolve().then(() => {
-  console.log('promise3')
-})
+// Promise.resolve().then(() => {
+//   console.log('promise3')
+// })
 
-console.log('end')
+// console.log('end')
+
+
+// const multiDimensionalArray = [[1, 2, 2], [3, 4, 4], [5, 6, 6]];
+// const data = multiDimensionalArray.flat();
+// const uniqueArray = [...new Set(data)];
+// console.log(uniqueArray);
+
+
+const multiArray = [1, [2, [3, 4, 4]], [5, 6, 6]];
+
+const flatArray = multiArray.flat(3);
+console.log(flatArray);
+
+const uniqueArray = [...new Set(flatArray)];
+
+console.log(uniqueArray); // [1, 2, 3, 4, 5, 6]
