@@ -135,7 +135,6 @@
 // const uniqueArray = [...new Set(data)];
 // console.log(uniqueArray);
 
-
 const multiArray = [1, [2, [3, 4, 4]], [5, 6, 6]];
 
 const flatArray = multiArray.flat(3);
