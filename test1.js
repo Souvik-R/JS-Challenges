@@ -138,6 +138,7 @@
 const multiArray = [1, [2, [3, 4, 4]], [5, 6, 6]];
 
 const flatArray = multiArray.flat(3);
+
 console.log(flatArray);
 
 const uniqueArray = [...new Set(flatArray)];
