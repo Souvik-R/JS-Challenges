@@ -135,12 +135,25 @@
 // const uniqueArray = [...new Set(data)];
 // console.log(uniqueArray);
 
-const multiArray = [1, [2, [3, 4, 4]], [5, 6, 6]];
+// const multiArray = [1, [2, [3, 4, 4]], [5, 6, 6]];
 
-const flatArray = multiArray.flat(3);
+// const flatArray = multiArray.flat(3);
 
-console.log(flatArray);
+// console.log(flatArray);
 
-const uniqueArray = [...new Set(flatArray)];
+// const uniqueArray = [...new Set(flatArray)];
 
-console.log(uniqueArray); // [1, 2, 3, 4, 5, 6]
+// console.log(uniqueArray); // [1, 2, 3, 4, 5, 6]
+
+
+const str = "I am a software developer";
+
+const splitData = str.split(" ");
+
+console.log(splitData);
+
+const mapResult = splitData.map((word) => {
+    return word.split("").reverse().join("");
+})
+
+console.log(mapResult);
