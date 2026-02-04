@@ -146,14 +146,30 @@
 // console.log(uniqueArray); // [1, 2, 3, 4, 5, 6]
 
 
-const str = "I am a software developer";
 
-const splitData = str.split(" ");
 
-console.log(splitData);
+// const str = "I am a software developer";
 
-const mapResult = splitData.map((word) => {
-    return word.split("").reverse().join("");
-})
+// const splitData = str.split(" ");
 
-console.log(mapResult);
+// console.log(splitData);
+
+// const mapResult = splitData.map((word) => {
+//     return word.split("").reverse().join("");
+// });
+
+// console.log(mapResult);
+
+
+
+
+
+let a = 10;
+let b = 20;
+console.log(a);
+console.log(b);
+
+[a, b] = [b, a];
+
+console.log(a);
+console.log(b);
