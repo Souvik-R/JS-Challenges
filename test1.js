@@ -164,10 +164,21 @@
 
 
 
-let a = 10;
-let b = 20;
-console.log(a);
-console.log(b);
-[a, b] = [b, a];
-console.log(a);
-console.log(b);
+// let a = 10;
+// let b = 20;
+// console.log(a);
+// console.log(b);
+// [a, b] = [b, a];
+// console.log(a);
+// console.log(b);
+
+
+// Remove duplicate elements from array
+let data = [20, 10, 3, 21, , 4, 7, , , , 9];
+// data = data.filter(Boolean);
+data = data.filter((item) => {
+    if (item != false) {
+        return item
+    }
+});
+console.log(data);
