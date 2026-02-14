@@ -1,5 +1,4 @@
 /* 
-
 1. String
 2. Number
 3. Boolean
@@ -8,5 +7,4 @@
 6. null
 7. Object
 8. Symbol
-
 */
