@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Items One by One</title>
+</head>
+<body>
+
+  <div id="output"></div>
+  <button id="showBtn">Next</button>
+
+  <script>
+    const arr = [1, 2, 6, 3, 8, 5];
+
+    const outputDiv = document.getElementById("output");
+    const button = document.getElementById("showBtn");
+
+    let index = 0;
+
+    outputDiv.innerHTML = `<div>${arr[index]}</div>`;
+
+    button.addEventListener("click", () => {
+      index++;
+
+      if (index < arr.length) {
+        outputDiv.innerHTML += `<div>${arr[index]}</div>`;
+      } else {
+        button.disabled = true;
+      }
+    });
+  </script>
+
+</body>
+</html>
