@@ -16,6 +16,5 @@ const reverseString = function(s){
     }
     return arr.join("");
 }
-
 const result = reverseString("Souvik Roy + Srijani Das");
 console.log(result);
