@@ -21,17 +21,37 @@
 // fun(5)
 
 
-let missingNumber = function(nums) {
-    let n = nums.length;
-    let totalSum = n * (n + 1) / 2;
-    let partialSum = 0
-    for(let i = 0; i < n; i++) {
-        partialSum = partialSum + nums[i];
+// let missingNumber = function(nums) {
+//     let n = nums.length;
+//     let totalSum = n * (n + 1) / 2;
+//     let partialSum = 0
+//     for(let i = 0; i < n; i++) {
+//         partialSum = partialSum + nums[i];
+//     }
+//     return totalSum - partialSum;
+// };
+
+// let nums = [3, 0, 1];
+
+// console.log("Array:", nums);
+// console.log("Missing Number:", missingNumber(nums));
+
+var singleNumber = function (nums) {
+    let hash = {}
+    for (let i = 0; i < nums.length; i++) {
+        if (!hash[nums[i]]) {
+            hash[nums[i]] = 1
+        } else {
+            hash[nums[i]]++
+        }
     }
-    return totalSum - partialSum;
+    for (let i = 0; i < nums.length; i++) {
+        if (hash[nums[i]] == 1) {
+            return nums[i]
+        }
+    }
+    return hash;
 };
+let nums = [3, 2, 1, 2, 5, 3, 5];
 
-let nums = [3, 0, 1];
-
-console.log("Array:", nums);
-console.log("Missing Number:", missingNumber(nums));
+console.log(singleNumber(nums))
