@@ -36,22 +36,38 @@
 // console.log("Array:", nums);
 // console.log("Missing Number:", missingNumber(nums));
 
-var singleNumber = function (nums) {
-    let hash = {}
-    for (let i = 0; i < nums.length; i++) {
-        if (!hash[nums[i]]) {
-            hash[nums[i]] = 1
-        } else {
-            hash[nums[i]]++
-        }
-    }
-    for (let i = 0; i < nums.length; i++) {
-        if (hash[nums[i]] == 1) {
-            return nums[i]
-        }
-    }
-    return hash;
-};
-let nums = [3, 2, 1, 2, 5, 3, 5];
+// var singleNumber = function (nums) {
+//     let hash = {}
+//     for (let i = 0; i < nums.length; i++) {
+//         if (!hash[nums[i]]) {
+//             hash[nums[i]] = 1
+//         } else {
+//             hash[nums[i]]++
+//         }
+//     }
+//     for (let i = 0; i < nums.length; i++) {
+//         if (hash[nums[i]] == 1) {
+//             return nums[i]
+//         }
+//     }
+//     return hash;
+// };
+// let nums = [3, 2, 1, 2, 5, 3, 5];
 
-console.log(singleNumber(nums))
+// console.log(singleNumber(nums))
+
+
+let findMaxConsecutiveOnes = function(nums) {
+    let currCount = 0;
+    let maxCount = 0;
+
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] == 1){
+            currCount++
+        } else {
+            maxCount = Math.max(currCount, maxCount);
+            currCount = 0
+        }
+    }
+    return Math.max(maxCount, currCount)
+};
