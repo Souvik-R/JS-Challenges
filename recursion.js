@@ -56,7 +56,6 @@
 
 // console.log(singleNumber(nums))
 
-
 let findMaxConsecutiveOnes = function(nums) {
     let currCount = 0;
     let maxCount = 0;
