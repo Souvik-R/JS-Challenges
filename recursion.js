@@ -56,17 +56,42 @@
 
 // console.log(singleNumber(nums))
 
-let findMaxConsecutiveOnes = function(nums) {
-    let currCount = 0;
-    let maxCount = 0;
+// let findMaxConsecutiveOnes = function(nums) {
+//     let currCount = 0;
+//     let maxCount = 0;
 
-    for(let i = 0; i < nums.length; i++){
-        if(nums[i] == 1){
-            currCount++
-        } else {
-            maxCount = Math.max(currCount, maxCount);
-            currCount = 0
+//     for(let i = 0; i < nums.length; i++){
+//         if(nums[i] == 1){
+//             currCount++
+//         } else {
+//             maxCount = Math.max(currCount, maxCount);
+//             currCount = 0
+//         }
+//     }
+//     return Math.max(maxCount, currCount)
+// };
+
+
+// move zeros
+// output = [2, 7, 4, 1, 0, 0, 0];
+
+function moveZero(arr){
+    let x = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] !== 0){
+            arr[x] = arr[i];
+            x++;
         }
-    }
-    return Math.max(maxCount, currCount)
-};
+    };
+    for(let i = x; i < arr.length; i++){
+        arr[i] = 0;
+    };
+    return arr;
+}
+let arr = [2, 7, 0, 4, 0, 1, 0];
+const result = moveZero(arr);
+
+console.log(result);
+
+
+
