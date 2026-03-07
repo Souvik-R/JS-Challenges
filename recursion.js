@@ -75,23 +75,35 @@
 // move zeros
 // output = [2, 7, 4, 1, 0, 0, 0];
 
-function moveZero(arr){
-    let x = 0;
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] !== 0){
-            arr[x] = arr[i];
-            x++;
-        }
-    };
-    for(let i = x; i < arr.length; i++){
-        arr[i] = 0;
-    };
-    return arr;
-}
-let arr = [2, 7, 0, 4, 0, 1, 0];
-const result = moveZero(arr);
+// function moveZero(arr){
+//     let x = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] !== 0){
+//             arr[x] = arr[i];
+//             x++;
+//         }
+//     };
+//     for(let i = x; i < arr.length; i++){
+//         arr[i] = 0;
+//     };
+//     return arr;
+// }
+// let arr = [2, 7, 0, 4, 0, 1, 0];
+// const result = moveZero(arr);
 
-console.log(result);
+// console.log(result);
+
+
+// Factorial of N numbers
+// Factorial means suppose n is 5, then the factorial is 
+// 5 * 4 * 3 * 2 * 1
+
+function fact(n) {
+    if (n == 1) return 1;
+    return n * fact(n - 1);
+}
+
+console.log(fact(5));
 
 
 
