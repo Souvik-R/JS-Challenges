@@ -95,15 +95,30 @@
 
 
 // Factorial of N numbers
-// Factorial means suppose n is 5, then the factorial is 
+// Factorial means suppose n is 5, then the factorial is =
 // 5 * 4 * 3 * 2 * 1
 
-function fact(n) {
-    if (n == 1) return 1;
-    return n * fact(n - 1);
+// function fact(n) {
+//     if (n == 1) return 1;
+//     return n * fact(n - 1);
+// }
+
+// console.log(fact(5));
+
+
+// power of two
+// means I have n number means one number, now I have to check that
+// number is power of two or not, so it will return true or false.
+// suppose n = 16, now I have to find that 16 is power of 2 on not.
+
+
+function powerOfTwo(n) {
+    if (n == 1) return true; // base case
+    else if (n < 1 || (n % 2 !== 0)) return false
+
+    return powerOfTwo(n / 2); // recursive case
 }
 
-console.log(fact(5));
-
+console.log(powerOfTwo(15))
 
 
