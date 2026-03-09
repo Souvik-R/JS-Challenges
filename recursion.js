@@ -112,13 +112,28 @@
 // suppose n = 16, now I have to find that 16 is power of 2 on not.
 
 
-function powerOfTwo(n) {
-    if (n == 1) return true; // base case
-    else if (n < 1 || (n % 2 !== 0)) return false
+// function powerOfTwo(n) {
+//     if (n == 1) return true; // base case
+//     else if (n < 1 || (n % 2 !== 0)) return false
 
-    return powerOfTwo(n / 2); // recursive case
+//     return powerOfTwo(n / 2); // recursive case
+// }
+
+// console.log(powerOfTwo(15))
+
+
+// Linear Search 
+// const arr = [1, 7, 2, 9, 0, 4]; find an index of a given number
+
+function linearSearch(arr, matchNum){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == matchNum){
+            return i;
+        }
+    };
+    return -1;
 }
-
-console.log(powerOfTwo(15))
+const arr = [1, 7, 2, 9, 0, 4];
+console.log(linearSearch(arr, 0));
 
 
