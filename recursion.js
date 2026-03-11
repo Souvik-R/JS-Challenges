@@ -122,18 +122,33 @@
 // console.log(powerOfTwo(15))
 
 
+
+// fibonacci number(Recursion)
+// 0, 1, 1, 2, 3, 5, 8, 13, 21
+
+function fib(n){
+    if(n <= 1) return n;  // base case
+    return fib(n-1) + fib(n-2); // resursive case
+}
+
+console.log(fib(3));
+
+
+
+
+
 // Linear Search 
 // const arr = [1, 7, 2, 9, 0, 4]; find an index of a given number
 
-function linearSearch(arr, matchNum){
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] == matchNum){
-            return i;
-        }
-    };
-    return -1;
-}
-const arr = [1, 7, 2, 9, 0, 4];
-console.log(linearSearch(arr, 0));
+// function linearSearch(arr, matchNum){
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] == matchNum){
+//             return i;
+//         }
+//     };
+//     return -1;
+// }
+// const arr = [1, 7, 2, 9, 0, 4];
+// console.log(linearSearch(arr, 0));
 
 
