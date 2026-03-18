@@ -28,17 +28,26 @@ const people = [
     { name: 'Eve', age: 35 }
 ];
 
-
-const output = people.reduce(function (acc, curr) {
-    if(acc[curr.age]){
-        acc[curr.age].push(curr);
+let result = {};
+for(let i = 0; i < people.length; i++){
+    if(result[people[i].age]){
+        result[people[i].age]++
     } else {
-        acc[curr.age] = [];
+        result[people[i].age] = 1;
     }
-    return acc;
-}, {});
+}
 
-console.log(output);
+
+// const output = people.reduce(function (acc, curr) {
+//     if(acc[curr.age]){
+//         acc[curr.age].push(curr);
+//     } else {
+//         acc[curr.age] = [];
+//     }
+//     return acc;
+// }, {});
+
+console.log(result);
 
 
 // {
