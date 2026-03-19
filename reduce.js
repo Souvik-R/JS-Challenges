@@ -20,22 +20,22 @@
 
 // console.log(output);
 
-const people = [
-    { name: 'Alice', age: 25 },
-    { name: 'Bob', age: 30 },
-    { name: 'Charlie', age: 25 },
-    { name: 'David', age: 30 },
-    { name: 'Eve', age: 35 }
-];
+// const people = [
+//     { name: 'Alice', age: 25 },
+//     { name: 'Bob', age: 30 },
+//     { name: 'Charlie', age: 25 },
+//     { name: 'David', age: 30 },
+//     { name: 'Eve', age: 35 }
+// ];
 
-let result = {};
-for(let i = 0; i < people.length; i++){
-    if(result[people[i].age]){
-        result[people[i].age]++
-    } else {
-        result[people[i].age] = 1;
-    }
-}
+// let result = {};
+// for(let i = 0; i < people.length; i++){
+//     if(result[people[i].age]){
+//         result[people[i].age]++
+//     } else {
+//         result[people[i].age] = 1;
+//     }
+// }
 
 
 // const output = people.reduce(function (acc, curr) {
@@ -47,7 +47,7 @@ for(let i = 0; i < people.length; i++){
 //     return acc;
 // }, {});
 
-console.log(result);
+// console.log(result);
 
 
 // {
@@ -55,3 +55,19 @@ console.log(result);
 //    '30': [ { name: 'David', age: 30 } ],
 //    '35': []
 // }
+
+// Two Sum(given a target and check which sum are matching the target from the array and return the indexes)
+
+const array = [9, 3, 5, 2];
+
+const twoSum = (nums, target) => {
+    for(let i = 0; i < nums.length; i++){
+        for(let j = i + 1; j < nums.length; j++){
+            if(nums[i] + nums[j] === target){
+                return [i, j];
+            }
+        }
+    }
+}
+
+console.log(twoSum(array, 7));
