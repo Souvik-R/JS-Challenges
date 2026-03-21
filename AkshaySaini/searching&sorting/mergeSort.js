@@ -9,6 +9,7 @@ let sortArray = function (nums) {
     return merge(left, right);
 }
 
+
 function merge(left, right) {
     let result = [];
     let i = 0, j = 0;
