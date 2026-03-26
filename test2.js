@@ -206,9 +206,41 @@
 // console.log(arr2);
 
 // Shallow Copy
-const arr = [1, 2, 5, 6, 8];
-const arr2 = [...arr];
-arr2.push(10);
-console.log(arr);
-console.log(arr2);
+// const arr = [1, 2, 5, 6, 8];
+// const arr2 = [...arr];
+// arr2.push(10);
+// console.log(arr);
+// console.log(arr2);
+
+const data = -12342;
+
+let reverseInteger = (num) => {
+    let rev = 0;
+    let numCopy = num;
+    num = Math.abs(num);
+    while(num > 0){
+        let last = num % 10;
+        rev = (10 * rev) + last;
+        num = Math.floor(num / 10);
+    }
+    return (numCopy < 0) ? -rev : rev;
+}
+
+// console.log(reverseInteger(data));
+
+
+const reverseString = function(s){
+    const arr = s.split("");
+    const len = arr.length;
+    const halfLen = Math.floor(len / 2);
+
+    for (let i = 0; i < halfLen; i++) {
+        let temp = arr[i];
+        arr[i] = arr[len - 1 - i];
+        arr[len - 1 - i] = temp;
+    }
+    return arr.join("");
+}
+const result = reverseString("Souvik Roy + Srijani Das");
+console.log(result);
 
