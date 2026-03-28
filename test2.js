@@ -241,6 +241,22 @@ const reverseString = function(s){
     }
     return arr.join("");
 }
-const result = reverseString("Souvik Roy + Srijani Das");
+// const result = reverseString("Souvik Roy + Srijani Das");
+// console.log(result);
+
+const removeElement = function (arr, val) {
+    let x = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== val) {
+            arr[x] = arr[i];
+            x++;
+        }
+    }
+    // arr.length = x;
+    return x;
+}
+
+const array = [0, 2, 2, 4, 4, 5, 6, 6];
+const result = removeElement(array, 5);
 console.log(result);
 
