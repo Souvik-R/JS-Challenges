@@ -19,4 +19,59 @@ let mergeArray = (arr1, arr2) => {
     return result;
 };
 
-console.log(mergeArray(array1, array2));
+// console.log(mergeArray(array1, array2));
+
+
+// 2. reverse an array of integer
+
+const arr = [2, 4, 1, 8];
+
+let reverseInt = function(array){
+    let res = [];
+    for(i = array.length - 1; i >= 0; i--){
+        console.log(array[i]);
+        res.push(array[i]);
+    };
+    return res;
+}
+
+// console.log(reverseInt(arr));
+
+
+// 3. Find Max Element
+
+const element = [3, 5, 9, 6, 100];
+
+function maxElem(num){
+    let max = num[0];
+    for(let i = 1; i < num.length; i++){
+        if(num[i] > max){
+            max = num[i];
+        }
+    }
+    return max;
+}
+
+// console.log(maxElem(element));
+
+
+// 4. Second Largest
+
+
+const fixedArr = [2, 8, 45, 32, 1];
+
+function largestElem(arr){
+    let first = -Infinity; second = -Infinity;
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > first){
+            second = first;
+            first = arr[i];
+        } else if(arr[i] > second && arr[i] != first){
+            second = arr[i];
+        }
+    }
+    return [first, second];
+}
+
+console.log(largestElem(fixedArr));
