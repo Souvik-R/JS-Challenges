@@ -1,4 +1,4 @@
-// two pass
+// two pass approach
 
 let removeNthFromEnd = function (head, n) {
     let sentinel = new Node();
@@ -24,5 +24,28 @@ let removeNthFromEnd = function (head, n) {
     prev.next = prev.next.next;
 
     // return it's head
-    return sentinel.head;
+    return sentinel.next;
+}
+
+
+
+// one pass approach (Two Pointers)
+
+let removeNthFromEnd = function (head, n) {
+    // create sentinel node
+    let sentinel = new Node();
+    sentinel.next = head;
+    // go to the first pointer which start from the n node..and second will start from sentinel
+    let first = sentinel;
+    for (let j = 0; j < n; j++) {
+        first = first.next;
+    }
+    let second = sentinel;
+    // move both pointer till the first goes to the last node
+    while (first.next) {
+        second = second.next;
+        first = first.next;
+    }
+    // delete the second.next
+    second.next = second.next.next;
 }
