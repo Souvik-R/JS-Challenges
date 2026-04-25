@@ -12,7 +12,7 @@ function countDigit(n) {
     return count;
 }
 
-let number = 0;
+let number = 7650;
 
 const result = countDigit(number);
 
