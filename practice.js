@@ -74,4 +74,24 @@ function largestElem(arr){
     return [first, second];
 }
 
-console.log(largestElem(fixedArr));
+// console.log(largestElem(fixedArr));
+
+
+let list = [
+    {name: "Puma Shoes", cat_id: 5, price: 300},
+    {name: "Adidas Shoes", cat_id: 9, price: 600},
+    {name: "Nike Shoes", cat_id: 5, price: 700},
+];
+
+
+function getResult(arr, catId){
+    return arr.reduce((acc, curr) => {
+        if(curr.cat_id === catId){
+            acc.count++;
+            acc.totalPrice += curr.price;
+        }
+        return acc;
+    }, {count: 0, totalPrice: 0});
+};
+
+console.log(getResult(list, 5))
