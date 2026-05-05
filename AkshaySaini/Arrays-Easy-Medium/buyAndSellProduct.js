@@ -1,4 +1,4 @@
-// Best way to buy and sell a product.
+// Best time to buy and sell a product.
 let maxProfitCalculation = function (prices) {
     let min = prices[0];
     
