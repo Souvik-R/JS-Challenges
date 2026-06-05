@@ -81,27 +81,25 @@
 
 
 
-// const arr = [1, [2, 3, [4, 5, [6]]], 7];
+const arr = [1, [2, 3, [4, 5, [6]]], 7];
 
-// function flattenArray(result) {
-//     console.log(result, "1111111111111111");
-//     // console.log(result, "1111111111111111");
-//     let swapped = true;
-//     while (swapped) {
-//         swapped = false;
-//         for (let i = 0; i < result.length; i++) {
-//             if (Array.isArray(result[i])) {
-//                 // remove nested array
-//                 let temp = result[i];
-//                 result.splice(i, 1, ...temp);
-//                 swapped = true;
-//             }
-//         }
-//     }
-//     return result;
-// }
+function flattenArray(result) {
+    let swapped = true;
+    while (swapped) {
+        swapped = false;
+        for (let i = 0; i < result.length; i++) {
+            if (Array.isArray(result[i])) {
+                // remove nested array
+                let temp = result[i];
+                result.splice(i, 1, ...temp);
+                swapped = true;
+            }
+        }
+    }
+    return result;
+}
 
-// console.log(flattenArray(arr));
+console.log(flattenArray(arr));
 
 
 
